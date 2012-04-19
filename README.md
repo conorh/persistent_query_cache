@@ -17,13 +17,13 @@ In the models where you want to enable the persistent query cache
 
   - Rails >= 3.x
 
-## Description and Usage Notes.
+## Description and Usage Notes
 
 This plugin enhances the ActiveRecord Query Cache to be persistent across requests for simple queries. It persists query results into the Rails::Cache. Currently it only persists queries of the form 'SELECT * FROM one_table WHERE some_id = 1231'.
 
 When the persistent query cache is active and working you should see log lines like this when there is a cache hit:
 
-   Persistent Cache (2.3ms)  SELECT `users`.* FROM `users` WHERE `users`.`id` = 434 LIMIT 1
+    Persistent Cache (2.3ms)  SELECT `users`.* FROM `users` WHERE `users`.`id` = 434 LIMIT 1
 
 To expire the records in the Cache after_save/after_destroy hooks are added. If the after_save or after_destroy hooks are skipped in any way (update_all, manual changes etc.) then the records will not be expired from the cache!
 
