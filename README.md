@@ -1,6 +1,6 @@
 # Persistent Query Cache
 
-This plugin enhances the ActiveRecord Query Cache to be persistent across requests for simple queries. It persists query results into the Rails::Cache. See the description section below for more detaila.
+This plugin enhances the ActiveRecord Query Cache to be persistent across requests for simple queries. It persists query results into the Rails::Cache. See the description section below for more details.
 
 The inspiration for this plugin and some of the basic code comes from Fernando Blat's fork of the memcache query cache <http://github.com/ferblape/query_memcached>.
 
