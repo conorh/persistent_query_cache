@@ -1,6 +1,8 @@
 # Persistent Query Cache
 
-The inspiration for this plugin and some of the basic code comes from Fernando Blat's fork of the memcache query cache <http://github.com/ferblape/query_memcached>. I needed something that worked similarly, but would not expire the entire table.
+This plugin enhances the ActiveRecord Query Cache to be persistent across requests for simple queries. It persists query results into the Rails::Cache. See the description section below for more detaila.
+
+The inspiration for this plugin and some of the basic code comes from Fernando Blat's fork of the memcache query cache <http://github.com/ferblape/query_memcached>.
 
 ## Install
 
